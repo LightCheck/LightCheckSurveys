@@ -373,3 +373,28 @@ body {
   .nav-links { flex-wrap: wrap; justify-content: center; }
   .footer-content { flex-direction: column; text-align: center; }
 }
+
+/* Footer Link Styles */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: var(--border-light);
+  font-size: 0.85rem;
+}
