@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apex Architectural & Spatial Solutions</title>
+  <title>Light Check</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="brand-container">
       <div class="logo-placeholder">LOGO PLACEHOLDER</div>
-      <div class="company-title">Apex Spatial Solutions</div>
+      <div class="company-title">Light Check Surveys</div>
     </div>
 
     <nav>
@@ -40,9 +40,9 @@
     <section id="welcome" class="page-content active-page">
       <div class="text-card">
         <h1>Line-up</h1>
-        <p>Welcome to Apex Spatial Solutions, your premier partner for precision surveying, environmental assessment, and architectural design support. We combine state-of-the-art laser technology with deep domain expertise to deliver unmatched clarity and detail for complex spatial projects across the residential and commercial sectors.</p>
-        <p>Our multidisciplinary team specializes in high-fidelity measured surveys, daylight and sunlight modeling, and integrated partner consultancy. Whether you are navigating planning permissions or executing ambitious structural alterations, our digital-first workflows ensure speed, accuracy, and total compliance with national regulations.</p>
-        <p>Explore our lineup of dedicated solutions using the navigation menu above to discover how our spatial surveying and analytical services can streamline your design process, mitigate spatial risks, and bring your visionary projects to life.</p>
+        <p>Welcome to Light Check Surveys, offering spacial solutions, your premier partner for precision surveying, associated advice and architectural spec design support. We combine state-of-the-art laser technology with extensive survey expertise to deliver unmatched clarity and detail for a vast array of complex spatial projects across the residential and commercial sectors.</p>
+        <p>We are a multidisciplinary business that specializes in high-fidelity measured surveys, daylight and sunlight modeling, and integrated partner consultancy. Whether you are navigating planning permissions or executing ambitious structural alterations, our digital-first workflows ensure speed, accuracy, and total compliance with national regulations.</p>
+        <p>Explore our lineup of dedicated solutions using the navigation menu above and discover how our spatial surveying and analytical services can streamline your design process, mitigate spatial risks, and bring your visionary projects to life.</p>
       </div>
     </section>
 
@@ -120,6 +120,20 @@
     <div class="footer-content">
       <div>&copy; 2026 Apex Spatial Solutions Ltd. All rights reserved.</div>
       <div>Placeholder Text: Terms &amp; Conditions | Privacy Policy | Contact Us</div>
+    </div>
+  </footer>
+  
+  <!-- Universal Bottom Footer Band -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>&copy; 2026 Apex Spatial Solutions Ltd. All rights reserved.</div>
+      <div class="footer-links">
+        <a class="footer-link" onclick="openFooterNote('Terms & Conditions')">Terms &amp; Conditions</a>
+        <span class="footer-divider">|</span>
+        <a class="footer-link" onclick="openFooterNote('Privacy Policy')">Privacy Policy</a>
+        <span class="footer-divider">|</span>
+        <a class="footer-link" onclick="openFooterNote('Contact Us')">Contact Us</a>
+      </div>
     </div>
   </footer>
 
@@ -246,6 +260,33 @@
           </div>
         </div>
       `;
+    });
+
+    // Footer Note Popups
+    function openFooterNote(type) {
+      const notes = {
+        'Terms & Conditions': `
+          <h3>Terms & Conditions Notes</h3>
+          <p><strong>[Placeholder Note 1]:</strong> General website terms of use and service provision guidelines.</p>
+          <p><strong>[Placeholder Note 2]:</strong> Intellectual property rights regarding 3D laser survey models and daylight reporting outputs.</p>
+          <p><strong>[Placeholder Note 3]:</strong> Payment terms, liability limitations, and cancellation policies for booked spatial surveys.</p>
+        `,
+        'Privacy Policy': `
+          <h3>Privacy Policy Notes</h3>
+          <p><strong>[Placeholder Note 1]:</strong> Data collection policies under UK GDPR and international data protection standards.</p>
+          <p><strong>[Placeholder Note 2]:</strong> How client spatial data, contact information, and cookies are securely stored and encrypted.</p>
+          <p><strong>[Placeholder Note 3]:</strong> Opt-out procedures and third-party partner service data-sharing protocols.</p>
+        `,
+        'Contact Us': `
+          <h3>Contact Us & Office Notes</h3>
+          <p><strong>📍 Main Office:</strong> 100 Spatial Plaza, Suite 400, London, UK</p>
+          <p><strong>📞 Phone:</strong> +44 (0) 20 7946 0912</p>
+          <p><strong>✉️ Email:</strong> inquiries@apexspatial.com</p>
+          <p><strong>[Note]:</strong> Office hours are Monday through Friday, 8:30 AM – 5:30 PM. For emergency on-site survey requests, please contact your account lead directly.</p>
+        `
+      };
+
+      openWindow(type, notes[type]);
     });
   </script>
 </body>
