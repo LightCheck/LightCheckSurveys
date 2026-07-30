@@ -90,7 +90,7 @@ body {
 
 .nav-btn {
     text-decoration: none;
-    color: var(--text-main);
+    color: var(--white);
     font-weight: 500;
     transition: color 0.3s;
 }
