@@ -76,8 +76,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 10px;
-    align-items: right;
+    gap: 20px;
+    align-items: centre;
     display: inline-block;
 }
 
