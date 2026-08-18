@@ -39,7 +39,7 @@ body {
 .top-band {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 1.5rem 3rem;
     background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(10px);
