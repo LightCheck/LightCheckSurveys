@@ -29,7 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     /* Placeholder for background image */
-    background: url('https://via.placeholder.com/1920x1080?text=Background+Image+Placeholder') center/cover no-repeat;
+    background: url('Elevation.png') center/cover no-repeat;
     filter: grayscale(100%);
     opacity: 0.3;
     z-index: -1;
