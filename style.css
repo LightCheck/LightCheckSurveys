@@ -49,6 +49,14 @@ body {
     z-index: 100;
 }
 
+/* Target your links container and push it right */
+.top-band nav, 
+.nav-links { 
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem; /* Adds spacing between your individual links */
+}
+
 .branding {
     display: flex;
     flex-direction: column;
