@@ -38,7 +38,7 @@ body {
 /* Header & Navigation */
 .top-band {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 1.5rem 3rem;
     background: rgba(15, 23, 42, 0.85);
