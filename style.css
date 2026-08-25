@@ -55,6 +55,7 @@ body {
     margin-left: auto;
     display: flex;
     gap: 1.5rem; /* Adds spacing between your individual links */
+margin-left: auto;
 }
 
 .branding {
@@ -86,7 +87,6 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-left: auto;
 }
 
 .nav-btn {
